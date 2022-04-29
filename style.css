@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+canvas{
+    position: absolute;
+    background: black;
+}
+.generate-tree-button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 20px 30px;
+    border-radius:50px ;
+    background: brown;
+    color: white;
+    font-size: 20px;
+    width: 300px;
+    overflow: hidden;
+
+}
+
+.heart{
+    font-size:10px;
+
+    position:fixed;
+    top:-1vh;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh);
+    }
+}
+
+.container {
+    /*centers in the container*/
+    text-align: center;
+}
+
+div.circTxt {
+    /*allows for centering*/
+    display: inline-block;
+    /*adjust as needed*/
+    margin-bottom: 128px;
+    color: red;
+    font-size: 20px;
+}
+
